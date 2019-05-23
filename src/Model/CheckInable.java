@@ -2,6 +2,6 @@ package Model;
 
 public interface CheckInable {
 
-	public void checkIn();
+	public int checkIn(Document d);
 
 }

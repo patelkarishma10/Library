@@ -18,8 +18,8 @@ public class Library {
 		getDocumentList().add(d);
 	}
 
-	public void updateItemInList() {
-
+	public void deleteItemInList(Document d) {
+		getDocumentList().remove(d);
 	}
 
 }

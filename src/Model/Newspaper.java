@@ -26,4 +26,9 @@ public class Newspaper extends Document {
 		this.issueNumber = issueNumber;
 	}
 
+	@Override
+	public String toString() {
+		return super.toString() + " " + headline + " " + issueNumber;
+	}
+
 }

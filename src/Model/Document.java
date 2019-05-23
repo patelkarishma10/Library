@@ -37,13 +37,18 @@ public abstract class Document implements CheckInable, CheckOutable {
 	}
 
 	@Override
-	public void checkIn() {
+	public String toString() {
+		return documentId + " " + publisherId + " " + stockCount;
+	}
 
+	@Override
+	public int checkIn(Document d) {
+
+		return d.setStockCount() + 1;
 	}
 
 	@Override
 	public void checkOut() {
-		// TODO Auto-generated method stub
 
 	}
 

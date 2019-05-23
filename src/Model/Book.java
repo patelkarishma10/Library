@@ -3,12 +3,12 @@ package Model;
 public class Book extends Document {
 
 	private String title;
-	private String Author;
+	private String author;
 
 	public Book(int documentId, int publisherId, int stockCount, String title, String author) {
 		super(documentId, publisherId, stockCount);
 		this.title = title;
-		Author = author;
+		this.author = author;
 	}
 
 	public String getTitle() {
@@ -20,11 +20,16 @@ public class Book extends Document {
 	}
 
 	public String getAuthor() {
-		return Author;
+		return author;
 	}
 
 	public void setAuthor(String author) {
-		Author = author;
+		this.author = author;
+	}
+
+	@Override
+	public String toString() {
+		return super.toString() + " " + title + " " + author;
 	}
 
 }

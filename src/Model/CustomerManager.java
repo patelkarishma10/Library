@@ -12,4 +12,12 @@ public class CustomerManager {
 	public void setCustomerList(ArrayList<Customer> customerList) {
 		this.customerList = customerList;
 	}
+
+	public void addCustomerToCusList(Customer c) {
+		getCustomerList().add(c);
+	}
+
+	public void deleteCustomerInCusList(Customer c) {
+		getCustomerList().remove(c);
+	}
 }

@@ -27,4 +27,9 @@ public class Map extends Document {
 		this.mapType = mapType;
 	}
 
+	@Override
+	public String toString() {
+		return super.toString() + " " + location + " " + mapType;
+	}
+
 }
