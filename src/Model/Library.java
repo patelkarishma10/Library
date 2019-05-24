@@ -2,7 +2,7 @@ package Model;
 
 import java.util.ArrayList;
 
-public class Library {
+public class Library implements CheckInable, CheckOutable {
 
 	private ArrayList<Document> documentList = new ArrayList<Document>();
 
@@ -20,6 +20,16 @@ public class Library {
 
 	public void deleteItemInList(Document d) {
 		getDocumentList().remove(d);
+	}
+
+	@Override
+	public void checkIn(Document d) {
+		d.setStockCount(d.getStockCount() + 1);
+	}
+
+	@Override
+	public void checkOut(Document d) {
+		d.setStockCount(d.getStockCount() - 1);
 	}
 
 }

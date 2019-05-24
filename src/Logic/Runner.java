@@ -10,6 +10,7 @@ import Model.Newspaper;
 public class Runner {
 	public static void main(String[] args) {
 		Customer K = new Customer(1, "K");
+
 		Book story = new Book(1, 139408, 3, "Story", "anuthor");
 		Map trailMap = new Map(2, 190943, 5, "london", "trail");
 		Newspaper theNews = new Newspaper(3, 394857, 1, "It's sunny", 55);
@@ -30,7 +31,10 @@ public class Runner {
 
 		System.out.println(list1.getDocumentList());
 		// list1.updateItemInList(story, 1);
-		System.out.println(list1.getDocumentList());
+		// System.out.println(list1.getDocumentList());
+		System.out.println(story);
+		list1.checkIn(story);
+		System.out.println(story);
 
 	}
 }

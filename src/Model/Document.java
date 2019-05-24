@@ -1,6 +1,6 @@
 package Model;
 
-public abstract class Document implements CheckInable, CheckOutable {
+public abstract class Document {
 
 	private int documentId;
 	private int publisherId;
@@ -39,17 +39,6 @@ public abstract class Document implements CheckInable, CheckOutable {
 	@Override
 	public String toString() {
 		return documentId + " " + publisherId + " " + stockCount;
-	}
-
-	@Override
-	public int checkIn(Document d) {
-
-		return d.setStockCount() + 1;
-	}
-
-	@Override
-	public void checkOut() {
-
 	}
 
 }

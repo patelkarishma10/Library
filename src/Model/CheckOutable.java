@@ -2,5 +2,5 @@ package Model;
 
 public interface CheckOutable {
 
-	public void checkOut();
+	public void checkOut(Document d);
 }
